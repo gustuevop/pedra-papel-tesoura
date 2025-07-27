@@ -1,0 +1,19 @@
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Build
+bin/
+
+# Outros
+*.log
+*.tmp
+
+# Ignorar configurações da Eclipse
+.classpath
+.project
+.settings/
+
+# Ignorar arquivos compilados
+bin/
