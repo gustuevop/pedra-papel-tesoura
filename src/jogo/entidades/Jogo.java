@@ -2,6 +2,9 @@ package jogo.entidades;
 
 import java.util.List;
 
+import jogo.entidades.menu.Menu;
+import jogo.entidades.menu.Opcao;
+
 public class Jogo {
 
 	private List<Jogador> jogadores;
@@ -16,12 +19,15 @@ public class Jogo {
 		Jogador j1 = new Jogador();
 		Jogador j2 = new Jogador();
 		
-		Menu menu = new Menu();
-		menu.executar();
+		this.menu = new Menu();
+		Opcao opcao = menu.executar();
+		opcao.executar();
 		
-		System.out.println("Bem vindo ao jogo pedra-papel-tesoura!");
-		System.out.println("1 - Jogar nova partida.");
-		System.out.println("2 - Ver histórico de partidas.");
 		
 	}
 }
+
+
+//Jogar nova partida
+//Ver historico
+//Sair
