@@ -7,27 +7,18 @@ import jogo.entidades.menu.Opcao;
 
 public class Jogo {
 
+	private List<Opcao> opcoesMenu;
 	private List<Jogador> jogadores;
 	private Menu menu;
 	
-	public Jogo(Jogador j1, Jogador j2) {
-		this.jogadores.add(j1);
-		this.jogadores.add(j2);
+	public Jogo(List<Jogador> jogadores, List<Opcao> opcoesMenu) {
+		this.jogadores = jogadores;
+		this.opcoesMenu = opcoesMenu;
 	}
 	
 	public void jogar() {
-		Jogador j1 = new Jogador();
-		Jogador j2 = new Jogador();
-		
-		this.menu = new Menu();
+		this.menu = new Menu(opcoesMenu);
 		Opcao opcao = menu.executar();
-		opcao.executar();
-		
-		
+		opcao.executar(jogadores);
 	}
 }
-
-
-//Jogar nova partida
-//Ver historico
-//Sair

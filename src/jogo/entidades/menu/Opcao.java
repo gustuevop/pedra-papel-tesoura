@@ -14,4 +14,6 @@ public abstract class Opcao {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
+	public abstract Resultado executar(List<Jogador> jogadores);
 }

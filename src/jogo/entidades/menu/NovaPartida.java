@@ -7,9 +7,10 @@ public class NovaPartida extends Opcao {
 	private String nome = "Nova Partida";
 	private Resultado resultado;
 
-	public Resultado executar() {
-		//logica do jokenpo
-		return Resultado.GANHOU;
+	@Override
+	public Resultado executar(List<Jogador> jogadores) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }

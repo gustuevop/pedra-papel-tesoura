@@ -17,7 +17,7 @@ public class Menu {
 			System.out.println(opcao.getNome());
 		}
 		
-		int idOpcao = new Scanner(System.in).nex
+		//int idOpcao = new Scanner(System.in).nex
 		
 		return null;
 	}
