@@ -1,9 +1,8 @@
-package jogo;
+package jogo.entidades.menu.opcoes;
 
 import java.util.List;
 
 import jogo.entidades.Jogador;
-import jogo.entidades.menu.Opcao;
 
 public class OpcaoSair extends Opcao {
 

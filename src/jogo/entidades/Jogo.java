@@ -3,7 +3,7 @@ package jogo.entidades;
 import java.util.List;
 
 import jogo.entidades.menu.Menu;
-import jogo.entidades.menu.Opcao;
+import jogo.entidades.menu.opcoes.Opcao;
 
 public class Jogo {
 

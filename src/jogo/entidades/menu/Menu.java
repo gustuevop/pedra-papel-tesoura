@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import jogo.OpcaoSair;
+import jogo.entidades.menu.opcoes.Opcao;
+import jogo.entidades.menu.opcoes.OpcaoNovaPartida;
+import jogo.entidades.menu.opcoes.OpcaoSair;
 
 public class Menu {
 	private List<Opcao> opcoes;
