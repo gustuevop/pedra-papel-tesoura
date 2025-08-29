@@ -15,5 +15,5 @@ public abstract class Opcao {
 		this.nome = nome;
 	}
 
-	public abstract Resultado executar(List<Jogador> jogadores);
+	public abstract boolean executar(List<Jogador> jogadores);
 }
