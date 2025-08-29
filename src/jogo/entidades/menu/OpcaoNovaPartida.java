@@ -4,13 +4,19 @@ import jogo.entidades.Jogador;
 import java.util.*;
 
 public class OpcaoNovaPartida extends Opcao {
-	private String nome = "Nova Partida";
-	private Resultado resultado;
+	
+	protected OpcaoNovaPartida() {
+		super("NOVA PARTIDA");
+	}
 
 	@Override
 	public boolean executar(List<Jogador> jogadores) {
-		// TODO Auto-generated method stub
-		return false;
+		System.out.println("Você ganhou!");
+		
+		System.out.println("Voltar para tela inicial?");
+		System.out.println("1 - SIM");
+		new Scanner(System.in).nextInt();
+		return true;
 	}
 	
 }

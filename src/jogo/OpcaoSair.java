@@ -7,9 +7,12 @@ import jogo.entidades.menu.Opcao;
 
 public class OpcaoSair extends Opcao {
 
+   public OpcaoSair() {
+        super("SAIR");
+    }
+	
 	@Override
 	public boolean executar(List<Jogador> jogadores) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

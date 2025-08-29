@@ -5,14 +5,15 @@ import java.util.List;
 import jogo.entidades.Jogador;
 
 public abstract class Opcao {
-	private String nome;
+	
+	private final String nome;
 
+    protected Opcao(String nome) {
+        this.nome = nome;
+    }
+	
 	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
+		return this.nome;
 	}
 
 	public abstract boolean executar(List<Jogador> jogadores);
