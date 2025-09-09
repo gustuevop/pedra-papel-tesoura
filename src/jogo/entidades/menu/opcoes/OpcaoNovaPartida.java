@@ -33,7 +33,7 @@ public class OpcaoNovaPartida extends Opcao {
 	}
 
 	private Simbolo obterSimbolo(Scanner scanner) {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 	

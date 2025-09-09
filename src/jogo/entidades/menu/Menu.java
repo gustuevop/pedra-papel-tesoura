@@ -17,13 +17,24 @@ public class Menu {
 	}
 
 	public Opcao executar() {
-		limparTela();
-		System.out.println("Escolha uma opção:");
+		System.out.println("\n====\nEscolha uma opção:\n");
 		
 		for (int i = 0; i < opcoes.size(); i++) {
 			System.out.printf("%d - %s%n", i, opcoes.get(i).getNome());
 		}
-		int indiceOpcaoEscolhida = scanner.nextInt();
+		
+		int indiceOpcaoEscolhida = -1;
+		
+		while (indiceOpcaoEscolhida < 0 || indiceOpcaoEscolhida >= opcoes.size()) {
+			if (scanner.hasNextInt()) {
+				indiceOpcaoEscolhida = scanner.nextInt();
+			} else {
+				System.out.println("\nEntrada inválida! Tente novamente.\n");
+				scanner.next();
+			}
+		}
+		
+	
 		return opcoes.get(indiceOpcaoEscolhida);
 	}
 	
@@ -38,9 +49,4 @@ public class Menu {
 		return opcoesMenu;
 	}
 	
-	public static void limparTela() {
-	    for (int i = 0; i < 100; i++) {
-	        System.out.println();
-	    }
-	}
 }
